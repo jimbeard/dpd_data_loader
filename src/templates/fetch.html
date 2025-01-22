@@ -1,0 +1,8 @@
+{% extends "layout.html" %}
+{% block title %}
+Fetch
+{% endblock %}
+{% block content %}
+<p>Fetching images and persisting to storage directory...</p>
+<span class="message">{{ name }} images retrieved by {{ host }}</span> {{ date.strftime("%A, %d %B, %Y at %X") }}
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends "layout.html" %}
+{% block title %}
+Image
+{% endblock %}
+{% block content %}
+{% if image_url %}
+<h1>Next image:</h1>
+<img src="data:image/png;base64,{{ image_url }}" alt="Image from external source">
+{% else %}
+<h1>No images to display D:</h1>
+{% endif %}
+{% endblock %}
